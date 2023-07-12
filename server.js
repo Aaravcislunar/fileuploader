@@ -31,6 +31,13 @@ app.post('/upload', upload.single('file'), async (req, res) => {
   }
 });
 
-app.listen(3001, () => {
-  console.log('Server listening on port 3001');
+const port = process.env.port || 3001;
+app.listen(port, () => {
+  console.log(`Server is running on port: ${port}`);
 });
+
+
+
+
+
+
