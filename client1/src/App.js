@@ -13,7 +13,7 @@ function App() {
       const formData = new FormData();
       formData.append('file', file);
 
-      await axios.post('https://uploader-7jwg.onrender.com/upload', formData);
+      await axios.post('http://localhost:3002/upload', formData);
 
       console.log('File uploaded successfully!');
     } catch (error) {
